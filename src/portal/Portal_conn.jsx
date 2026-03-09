@@ -27,7 +27,7 @@ const [data,dataset] = useState([]);
       console.log("hello");
       
       const res = await axios.get("https://bridge-etn0.onrender.com/api/getLicense",{ withCredentials: true } );
-      dataset(res);
+      dataset(res.data);
       console.log(res);
       
       
