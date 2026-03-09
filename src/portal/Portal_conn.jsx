@@ -28,6 +28,7 @@ const [data,dataset] = useState([]);
       
       const res = await axios.get("http://localhost:3000/api/getLicense",{ withCredentials: true } );
       dataset(res);
+      console.log(res);
       
       
     } catch (error) {
@@ -59,12 +60,12 @@ const [data,dataset] = useState([]);
           <LicenseRow licenseKey="LIC-8X92-KD92-PL01" initialUser="Sohaib" initialType="Algo" status="Active" />
           <LicenseRow licenseKey="LIC-2A44-M292-XQ88" initialUser="Sohaib" initialType="Manual" status="Active" />
           <LicenseRow licenseKey="LIC-9P12-BB02-KL09" initialUser="Sohaib" initialType="Algo" status="Active" />
-          {/* {
+          {
             data.map((e)=>{
-              return(          <LicenseRow licenseKey= {e.licenseKey} initialUser={e.licenseName} initialType="Algo" status={e.} />
+              return(          <LicenseRow licenseKey= {e.licenseKey} initialUser={e.licenseName} initialType="Algo" status={e.status} />
 )
             })
-          } */}
+          }
         </div>
       </div>
     </div>
