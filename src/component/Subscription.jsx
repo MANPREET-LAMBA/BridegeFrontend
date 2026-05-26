@@ -3,8 +3,69 @@ import axios from "axios";
 import { useNavigate } from "react-router";
 
 const Subscription = () => {
-  const [plans, setPlans] = useState([]);
+  // const [plans, setPlans] = useState([]);
   const navigate = useNavigate();
+  const plans = [
+  {
+    _id: "698f66b0d2644f37a942a803",
+    name: "Starter Pro",
+    price: "₹29/mo",
+    currency: "INR",ç
+    billingCycle: "monthly",
+    isFree: false,
+    accounts: 2,
+    highlight: false,
+    features: [
+      "2 Trading Accounts",
+      "Basic Analytics",
+      "Email Support",
+      "Real-time Monitoring",
+      "Secure Dashboard",
+      "Strategy Access",
+      "Beginner Friendly",
+    ],
+  },
+  {
+    _id: "698f66c0d2644f37a942a806",
+    name: "Trader Plus",
+    price: "₹59/mo",
+    currency: "INR",
+    billingCycle: "monthly",
+    isFree: false,
+    accounts: 5,
+    highlight: true,
+    features: [
+      "5 Trading Accounts",
+      "Advanced Analytics",
+      "Priority Support",
+      "Real-time Monitoring",
+      "Risk Management",
+      "API Access",
+      "Custom Strategies",
+      "Performance Reports",
+    ],
+  },
+  {
+    _id: "698f66cbd2644f37a942a809",
+    name: "Scale Master",
+    price: "₹129/mo",
+    currency: "INR",
+    billingCycle: "monthly",
+    isFree: false,
+    accounts: 12,
+    highlight: false,
+    features: [
+      "12 Trading Accounts",
+      "Enterprise Analytics",
+      "24/7 Premium Support",
+      "Unlimited Strategies",
+      "Advanced Risk Control",
+      "API + Webhooks",
+      "Team Collaboration",
+    ],
+  },
+];
+
 
   useEffect(() => {
     const fetchSubscription = async () => {
