@@ -10,7 +10,7 @@ const Subscription = () => {
     _id: "698f66b0d2644f37a942a803",
     name: "Starter Pro",
     price: "₹29/mo",
-    currency: "INR",ç
+    currency: "INR",
     billingCycle: "monthly",
     isFree: false,
     accounts: 2,
